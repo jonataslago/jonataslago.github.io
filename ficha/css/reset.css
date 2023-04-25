@@ -10,11 +10,17 @@
     --main-color: #fff;
     --fancy-color: #E9DAC4;
     --text-color: #000;
+
+    --bg: #F6FAFB;
 }
 
 a{
     text-decoration: none;
     color: var(--text-color);
+}
+
+body{
+    background-color: var(--bg);
 }
 
 .button span{

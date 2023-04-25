@@ -1,8 +1,8 @@
 .hero{
     background-image: url(../assets/img/background.png);
     background-position: bottom;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -10,7 +10,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5rem;
+    gap: 9rem;
+    height: 95%;
+    justify-content: flex-end;
 }
 
 .hero .title{
