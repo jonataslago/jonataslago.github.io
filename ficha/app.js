@@ -1,4 +1,4 @@
-let carlos = document.querySelector('#carlos')
+let carlos = document.querySelector('#carlos');
 
 const input = document.querySelector('#valor');
 const barra = document.querySelector('#barra');

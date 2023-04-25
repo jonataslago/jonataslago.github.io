@@ -1,3 +1,7 @@
+let carlos = document.querySelector('#carlos');
+
+const img = document.querySelector('#imagemInput');
+const imagem = document.querySelector('#imagemExibida');
 
 let title = document.querySelector('#mainTitle');
 let newTitle = document.querySelector('#newTitle');
@@ -21,6 +25,15 @@ let especialidade = document.querySelector('#especialidade');
 let newEspecialidade = document.querySelector('#newEspecialidade');
 
 function criar(){
+
+    const file = img.files[0];
+    const reader = new FileReader();
+
+    reader.readAsDataURL(file);
+
+    reader.onload = () => {
+        imagem.src = reader.result;
+    }
     title.innerText = newTitle.value;
 
     grau.innerText = newGrau.value;
@@ -37,7 +50,20 @@ function criar(){
 }
 
 function exportar() {
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-        document.body.appendChild(canvas)
-    });
-}
+
+    const canva = carlos.querySelector('canvas');
+  
+    if (canva){
+  
+      canva.remove();
+  
+    }else{
+  
+      html2canvas(document.querySelector("#capture")).then(canvas => {
+        carlos.appendChild(canvas)
+      });
+  
+    }
+  
+    
+  }

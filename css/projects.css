@@ -17,4 +17,12 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.projects .button{
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }

@@ -28,3 +28,7 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.dark-mode:hover{
+    color: #000;
+}
