@@ -1,0 +1,20 @@
+.projects{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.projects .space{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.projects .wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

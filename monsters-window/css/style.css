@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --font: 'Roboto', sans-serif;
+    --font-color: #fff;
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 300;
+    --font-size: 12px;
+    --font-size-title: 16px;
+    --font-size-class: 48px;
+
+    --gap: 10px;
+
+    --bg-width: 405px;
+    --bg-height: 260px
+}
+
+h1, h2, h4, p, body{
+    margin: 0;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/background.png);
+    width: var(--bg-width);
+    height: var(--bg-height);
+    font-family: var(--font);
+    color: var(--font-color);
+    padding: var(--gap);
+    gap: var(--gap);
+    border-radius: 10px;
+    border: 1px solid var(--font-color);
+}
+
+.info{
+    position: relative;
+    display: flex;
+    gap: var(--gap);
+}
+
+.info img{
+    width: 112px;
+    height: 112px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.title{
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-title);
+}
+
+.nsei{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 215px;
+    height: 85px;
+}
+
+.group{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.atributtes{
+    font-weight: var(--font-medium);
+    font-size: var(--font-size);
+}
+
+p{
+    font-weight: var(--font-regular);
+    font-size: var(--font-size);
+}
+
+.classe{
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    font-size: var(--font-size-class);
+}
+
+.atributtes{
+    margin-bottom: 5px;
+}
+
+.content{
+    width: 100%;
+    height: 110px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 1px;
+    
+}
+ 
+.content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}

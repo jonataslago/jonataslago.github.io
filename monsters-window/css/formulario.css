@@ -1,0 +1,126 @@
+:root{
+    --form-bg: #27272a;
+
+    --bg: #18181b;
+
+}
+
+.dunno{
+    display: grid;
+    background-color: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.span-2-row-grid{
+    grid-row: span 2;
+}
+
+.formulario{
+    display: flex;
+    background-color: var(--form-bg);
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 35px;
+    padding-left: 15px;
+    border: solid 1px var(--font-color);
+    border-radius: 5px;
+}
+
+.box input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: var(--font-color);
+    font-family: var(--font);
+}
+
+.subject{
+    position: absolute;
+    background-color: var(--form-bg);
+    font-family: var(--font);
+    font-size: 15px;
+    color: var(--font-color);
+    top: -16px;
+    left: 15px;
+    padding: 5px;
+}
+
+.formulario button{
+    position: relative;
+    background-color: #fff;
+    width: 75px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.formulario .mainTitle{
+    font-family: var(--font);
+    color: var(--font-color);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.formulario button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    z-index: -1;
+    transition: transform 200ms ease-in;
+}
+
+#btnExportar, #btnCriar{
+    transition: color 150ms;
+}
+
+#btnExportar::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#btnExportar:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#btnExportar:hover{
+    color: #fff;
+}
+
+#btnCriar::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#btnCriar:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#btnCriar:hover{
+    color: #fff;
+}

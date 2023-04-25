@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <main class="dunno">
+        <form class="formulario span-2-row-grid">
+            <h1 class="mainTitle">Dados</h1>
+            <div class="box">
+                <input type="text" id="newTitle">
+                <span class="subject">Título:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newGrau">
+                <span class="subject">Grau:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newDesafio">
+                <span class="subject">Classificação do desafio:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newNvl-monstro">
+                <span class="subject">Nível do monstro:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newMaior-e-menor-atributo">
+                <span class="subject">Maiores e menores atributos:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newTotal-atributo">
+                <span class="subject">Pontos totais de atributos:</span>
+            </div>
+            <div class="box">
+                <input type="text" id="newEspecialidade">
+                <span class="subject">Especialidades:</span>
+            </div>
+            <div class="hm">
+                <button id="btnCriar" onclick="criar()" type="button">Criar</button>
+                <button id="btnExportar" onclick="exportar()" type="button">Exportar</button>
+            </div>
+        </form>
+        <section class="background" id="capture">
+            <div class="header">
+                <div class="info">
+
+                    <img src="assets/Pictur.png" id="img" alt="monster picture">
+
+                    <div class="main-info">
+
+                        <h1 class="title" id="mainTitle">Lendários Cavalheiros do Terror </h1>
+
+                        <div class="nsei">
+                            <div class="group">
+                                <h4 class="atributtes">Grau:</h4>
+                                <p id="grau">nvl 10</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="atributtes">Classificação do desafio:</h4>
+                                <p id="desafio">nvl 10</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="atributtes">Nível do monstro:</h4>
+                                <p id="nvl-monstro">nvl 10</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="atributtes">Maiores e menores atributos:</h4>
+                                <p id="maior-e-menor-atributo">nvl 10</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="atributtes">Pontos totais de atributos:</h4>
+                                <p id="total-atributo">nvl 10</p>
+                            </div>
+                        </div>
+
+                        <h1 class="classe" id="classe">A</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra">
+                
+                <h4 class="atributtes">Especialidades:</h4>
+
+                <div class="content">
+                    <p id="especialidade">Spray Ácido, Dano corrosivo, Ataques de mordida.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="html2canvas.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

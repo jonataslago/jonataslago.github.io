@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="html2canvas.js"></script>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="space">
+            
+            <a href="../index.html">
+                <img src="../assets/img/Mr. Lago.png" alt="Mr. Lago">
+            </a>
+
+            <div class="button">
+                <a href=""><span>Contact Me</span></a>
+            </div>
+        </div>
+
+    </header>
+    <main class="dunno">
+        <form class="formulario span-2-row-grid">
+
+            <h1 class="mainTitle">Dados</h1>
+
+            <div class="flow">
+
+                <div class="lado-1">
+
+                    <div class="box padding-top">
+                        <input type="file" id="imagemInput">
+                        <span class="subject">Foto:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newNome">
+                        <span class="subject">Nome:</span>
+                    </div>
+                    <div class="box half">
+                        <input type="text" id="newIdade">
+                        <span class="subject">Idade:</span>
+                    </div>
+                    <div class="box half">
+                        <input type="text" id="newStatus">
+                        <span class="subject">Status:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newAfiliacao">
+                        <span class="subject">Afiliação:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newProfissao">
+                        <span class="subject">Profissão:</span>
+                    </div>
+                    <div class="box half">
+                        <input type="text" id="newHP">
+                        <span class="subject">HP:</span>
+                    </div>
+                    <div class="box half">
+                        <input type="text" id="valor">
+                        <span class="subject">HP%:</span>
+                    </div>
+                </div>
+
+                <div class="lado-1">
+
+                    <div class="box third">
+                        <input type="text" id="newFor">
+                        <span class="subject">For:</span>
+                    </div>
+                    <div class="box third">
+                        <input type="text" id="newDes">
+                        <span class="subject">Des:</span>
+                    </div>
+                    <div class="box third">
+                        <input type="text" id="newCon">
+                        <span class="subject">Con:</span>
+                    </div>
+                    <div class="box third">
+                        <input type="text" id="newInt">
+                        <span class="subject">Int:</span>
+                    </div>
+                    <div class="box third">
+                        <input type="text" id="newSab">
+                        <span class="subject">Sab:</span>
+                    </div>
+                    <div class="box third">
+                        <input type="text" id="newCar">
+                        <span class="subject">Car:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newExpAbate">
+                        <span class="subject">EXP de Abate:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newExpProf">
+                        <span class="subject">EXP de Profissão:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newPtsHab">
+                        <span class="subject">PTS de Habilidade:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newPtsAtributos">
+                        <span class="subject">PTS de Atributos:</span>
+                    </div>
+                </div>
+
+                <div class="lado-1">
+
+                    <div class="box">
+                        <input type="text" id="newHabDeProf">
+                        <span class="subject">De Profissão:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newHabLendaria">
+                        <span class="subject">Lendárias:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newHabDeCombate">
+                        <span class="subject">De Combate:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newAptPessoais">
+                        <span class="subject">Pessoais:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text" id="newAptDeProf">
+                        <span class="subject">Afiliação:</span>
+                    </div>
+                    <div class="box">
+                        <input type="text">
+                        <span class="subject">SPFB:</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hm">
+                <button id="btnCriar" onclick="criar()" type="button">Criar</button>
+                <button id="btnExportar" onclick="exportar()" type="button">Exportar</button>
+            </div>
+        </form>
+
+        <section class="down" id="carlos">
+            <div class="fundo" id="capture">
+                <div class="info">
+
+                    <img src="src/img/image 1.png" alt="soran" id="imagemExibida">
+                    
+                    <div class="wrap">
+                        <div class="forms">
+                            <p class="tag">Name:</p>
+                            <p class="data" id="nome">Soran</p>
+                        </div>
+                        <div class="forms idade">
+                            <p class="tag">Idade:</p>
+                            <p class="data" id="idade">18</p>
+                        </div>
+                        <div class="forms status">
+                            <p class="tag">Status:</p>
+                            <p class="data" id="status">Normal</p>
+                        </div>
+                        <div class="forms">
+                            <p class="tag">Afiliação:</p>
+                            <p class="data" id="afiliacao">Mal ilícito</p>
+                        </div>
+                        <div class="forms">
+                            <p class="tag">Profissão:</p>
+                            <p class="data" id="profissao">Ladino [10]/Plebeu [10]</p>
+                        </div>
+                    </div>
+                    <div class="forms hp">
+                        <div id="barra"></div>
+                        <p class="data" id="hp">52/52</p>
+                    </div>
+                </div>
+
+                <div class="atributos">
+                    <h1 class="title">Atributos</h1>
+                    <div class="wrap">
+                        <div class="forms atr">
+                            <p class="tag for">FOR:</p>
+                            <p class="data" id="for">10</p>
+                        </div>
+                        <div class="forms atr">
+                            <p class="tag des">DES:</p>
+                            <p class="data" id="des">10</p>
+                        </div>
+                        <div class="forms atr">
+                            <p class="tag con">CON:</p>
+                            <p class="data" id="con">10</p>
+                        </div>
+                        <div class="forms atr">
+                            <p class="tag int">INT:</p>
+                            <p class="data" id="int">10</p>
+                        </div>
+                        <div class="forms atr">
+                            <p class="tag sab">SAB:</p>
+                            <p class="data" id="sab">10</p>
+                        </div>
+                        <div class="forms atr">
+                            <p class="tag car">CAR:</p>
+                            <p class="data" id="car">10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experiencia">
+                    <h1 class="title">EXPERIÊNCIAS (NÃO DISTRIBUÍDOS)</h1>
+                    
+                    <div class="wrap">
+                        <div class="forms exp">
+                            <p class="tag">EXP de Abate:</p>
+                            <p class="data" id="exp-de-abate">3900</p>
+                        </div>
+                        <div class="forms exp">
+                            <p class="tag">EXP de Profissão:</p>
+                            <p class="data" id="exp-de-prof">3900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experiencia">
+                    <h1 class="title">Pontos (NÃO DISTRIBUÍDOS)</h1>
+                    
+                    <div class="wrap">
+                        <div class="forms exp">
+                            <p class="tag">PTS de Habilidade:</p>
+                            <p class="data" id="pts-de-habilidade">3900</p>
+                        </div>
+                        <div class="forms exp">
+                            <p class="tag">PTS de Atributos:</p>
+                            <p class="data" id="pts-de-atributos">3900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidade">
+                    <h1 class="title">Habilidade</h1>
+
+                    <div class="wrap">
+                        <div class="forms hab">
+                            <p class="tag">De Profissão:</p>
+                            <div class="text">
+                                <p class="data" id="hab-de-profissao">Deus sla oq; mao que pega tudo; morte; sla;</p>
+                            </div>
+                        </div>
+                        <div class="forms hab">
+                            <p class="tag">Lendária:</p>
+                            <div class="text">
+                                <p class="data" id="hab-lendaria">Deus sla oq; mao que pega tudo; morte; sla;</p>
+                            </div>
+                        </div>
+                        <div class="forms hab">
+                            <p class="tag">De Combate:</p>
+                            <div class="text">
+                                <p class="data" id="hab-de-combate">Deus sla oq; mao que pega tudo; morte; sla;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidade">
+                    <h1 class="title">Aptidões</h1>
+
+                    <div class="wrap">
+                        <div class="forms hab">
+                            <p class="tag">Pessoais:</p>
+                            <div class="text">
+                                <p class="data" id="apt-pessoais">Deus sla oq; mao que pega tudo; morte; sla;</p>
+                            </div>
+                        </div>
+                        <div class="forms hab">
+                            <p class="tag">De Profissão:</p>
+                            <div class="text">
+                                <p class="data" id="apt-de-profissao">Deus sla oq; mao que pega tudo; morte; sla;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
