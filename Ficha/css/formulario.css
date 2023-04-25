@@ -3,9 +3,7 @@
     flex-direction: column;
     background-color: var(--bg);
     align-items: center;
-    padding: 2rem;
     gap: 3rem;
-    max-width: 100vw;
 }
 
 .span-2-row-grid{
@@ -26,7 +24,7 @@
 .flow{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .lado-1{
@@ -78,11 +76,12 @@
 .hm{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .formulario button{
     position: relative;
+    background-color: var(--bg);
     width: 49%;
     padding: 10px;
     border: none;

@@ -6,6 +6,7 @@
 }
 
 .button span{
+    font-size: var(--font-size-cta);
     font-weight: 500;
 }
 

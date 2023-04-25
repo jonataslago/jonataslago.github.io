@@ -32,7 +32,7 @@ h1, h2, p, body{
 .down{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .fundo{
