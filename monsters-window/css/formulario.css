@@ -12,6 +12,7 @@
     padding: 5rem 0rem;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 5rem;
 }
 
 .formulario{
@@ -20,6 +21,17 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
+}
+
+.dados{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    place-items: center;
+    width: 100%;
+    row-gap: 20px;
+    margin-bottom: 2rem;
 }
 
 .box{

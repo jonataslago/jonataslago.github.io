@@ -24,6 +24,9 @@ let newTotalAtributo = document.querySelector('#newTotal-atributo');
 let especialidade = document.querySelector('#especialidade');
 let newEspecialidade = document.querySelector('#newEspecialidade');
 
+let classe = document.querySelector('#classe');
+let newClasse = document.querySelector('#newClasse');
+
 function criar(){
 
     const file = img.files[0];
@@ -47,6 +50,8 @@ function criar(){
     totalAtributo.innerText = newTotalAtributo.value;
 
     especialidade.innerText = newEspecialidade.value;
+
+    classe.innerText = newClasse.value;
 }
 
 function exportar() {
