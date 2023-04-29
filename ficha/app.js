@@ -15,6 +15,9 @@ let newIdade = document.querySelector('#newIdade');
 let stat = document.querySelector('#status');
 let newStatus = document.querySelector('#newStatus');
 
+let raca = document.querySelector('#raca');
+let newRaca = document.querySelector('#newRaca');
+
 let afiliacao = document.querySelector('#afiliacao');
 let newAfiliacao = document.querySelector('#newAfiliacao');
 
@@ -93,6 +96,8 @@ function criar(){
   idade.innerText = newIdade.value;
 
   stat.innerText = newStatus.value;
+
+  raca.innerText = newRaca.value;
 
   afiliacao.innerText = newAfiliacao.value;
 

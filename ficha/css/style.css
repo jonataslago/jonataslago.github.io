@@ -65,12 +65,14 @@ h1, h2, p, body{
 .info img{
     width: 153px;
     height: 138px;
+    border: #fff solid 1px;
+    border-radius: 3px;
 }
 
 .info .wrap{
     display: flex;
     flex-wrap: wrap;
-    width: 162px;
+    width: 160px;
     gap: 10px;
 }
 
