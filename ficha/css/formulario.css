@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: var(--bg);
     align-items: center;
+    width: 100%;
     gap: 3rem;
 }
 
@@ -18,13 +19,14 @@
     background-color: var(--form-bg);
     gap: 40px;
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .flow{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 
 .lado-1{
@@ -76,7 +78,7 @@
 .hm{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 
 .formulario button{
@@ -145,7 +147,7 @@
     width: 20%;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .dunno{
         display: flex;
         flex-direction: column;
@@ -157,8 +159,7 @@
     }
 
     .flow{
-        flex-direction: column;
-        gap: 20px;
+        row-gap: 20px;
         width: 100%;
     }
 
@@ -167,29 +168,17 @@
     }
 
     .half{
-        width: 42%;
+        width: 40%;
     }
     
     .third{
-        width: 24%;
+        width: 22%;
     }
 
     .down{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        place-content: center;
-    }
-    
-}
-
-@media screen and (max-width: 400px) {
-
-    .half{
-        width: 38%;
-    }
-    
-    .third{
-        width: 20%;
+        display: flex;
+        min-width: 100%;
+        row-gap: 3rem;
     }
     
 }

@@ -32,6 +32,7 @@ h1, h2, p, body{
 .down{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 80%;
 }
 
@@ -40,7 +41,7 @@ h1, h2, p, body{
     flex-direction: column;
     background-color: var(--bg-color);
     max-width: 325px;
-    /* max-height: 932px; */
+    min-width: 325px;
     padding: 15px;
     color: white;
     font-family: var(--font-ficha);
