@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster V2</title>
+
+    <link rel="shortcut icon" href="assets/img/L.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="monster-card/css/reset.css">
+    <link rel="stylesheet" href="monster-card/css/section.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="monster-card/css/main.css">
+
+    <script src="monster-card/html2canvas.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="space">
+            
+            <a href="index.html">
+                <img src="assets/img/white-mr.lago.png" alt="Mr. Lago">
+            </a>
+
+            <div class="button dark-mode">
+                <a href=""><span>Contact Me</span></a>
+            </div>
+        </div>
+    </header>
+    <main class="camp">
+
+        <div class="wrap">
+
+            <h1 class="title">DADOS</h1>
+
+            <form action="" class="form">
+
+                <div class="right">
+                    
+                    <div class="box">
+                        <input type="file" id="imagemInput">
+                        <span class="category">Foto:</span>
+                    </div>
+
+                    <div class="box">
+                        <input type="text" id="newNome">
+                        <span class="category">Nome:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newGrau">
+                        <span class="category">Grau:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newNvlMonstro">
+                        <span class="category">Nível do Monstro:</span>
+                    </div>
+
+                    <div class="box">
+                        <input type="text" id="newObservation">
+                        <span class="category">Observação:</span>
+                    </div>
+
+                    <div class="box">
+                        <input type="text" id="newDesafio">
+                        <span class="category">Classificação do Desafio:</span>
+                    </div>
+                </div>
+
+                <div class="left">
+                    
+                    <div class="box">
+                        <input type="text" id="newClasse">
+                        <span class="category">Classe:</span>
+                    </div>
+                    
+                    <div class="box -half">
+                        <input type="text" id="newForca">
+                        <span class="category">FOR:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newDestreza">
+                        <span class="category">DES:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newConstituicao">
+                        <span class="category">CON:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newInteligencia">
+                        <span class="category">INT:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newSabedoria">
+                        <span class="category">SAB:</span>
+                    </div>
+
+                    <div class="box -half">
+                        <input type="text" id="newCarisma">
+                        <span class="category">CAR:</span>
+                    </div>
+                    
+                    <div class="box">
+                        <input type="text" id="newEspecialidade">
+                        <span class="category">Especialidades:</span>
+                    </div>
+
+                </div>
+
+            </form>
+            <div class="action">
+                
+                <div class="button dark-mode" onclick="criar()">Criar</div>
+                <div class="button dark-mode" onclick="exportar()">Exportar</div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="camp">
+
+        <div class="wrap">
+
+            <h1 class="title">Resultado</h1>
+
+            <div class="result" id="carlos">
+                
+                <div class="card" id="capture">
+                    
+                    <div class="upper-half">
+
+                        <div class="img-setting">
+                            
+                            <img src="assets/img/red-dragon-pic.png" alt="Monster Pic" id="imagemExibida">
+                            
+                            <span class="classe" id="classe">B-</span>
+
+                        </div>
+                        
+                        <div class="info">
+                            
+                            <div class="detail">
+
+                                <span class="nome" id="nome">Monster Name</span>
+                            
+                            </div>
+
+                            <div class="detail">
+                            
+                                <span class="sub">Grau:</span>
+
+                                <span class="data" id="grau">N/A</span>
+
+                            </div>
+
+                            <div class="detail">
+                            
+                                <span class="sub">Nível do Monstro:</span>
+
+                                <span class="data" id="nvlMonstro">N/A</span>
+                                
+                            </div>
+
+                            <div class="detail">
+                            
+                                <span class="sub">Observação:</span>
+
+                                <span class="data" id="observation">N/A</span>
+                                
+                            </div>
+
+                            <div class="detail">
+                            
+                                <span class="sub">Classificação do Desafio:</span>
+
+                                <span class="data" id="desafio">N/A</span>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="middle">
+
+                        <span class="sub">Atributos Estimados</span>
+
+                        <div class="stats">
+
+                            <div class="box">
+                                <span class="category">FOR:</span>
+                                <span class="number" id="forca">0</span>
+                            </div>
+
+                            <div class="box">
+                                <span class="category">DES:</span>
+                                <span class="number" id="destreza">0</span>
+                            </div>
+
+                            <div class="box">
+                                <span class="category">CON:</span>
+                                <span class="number" id="constituicao">0</span>
+                            </div>
+
+                            <div class="box">
+                                <span class="category">INT:</span>
+                                <span class="number" id="inteligencia">0</span>
+                            </div>
+
+                            <div class="box">
+                                <span class="category">SAB:</span>
+                                <span class="number" id="sabedoria">0</span>
+                            </div>
+
+                            <div class="box">
+                                <span class="category">CAR:</span>
+                                <span class="number" id="carisma">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="end">
+
+                        <span class="sub">Especialidades:</span>
+
+                        <div class="text-box">
+                            <span class="data" id="especialidade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestiae officiis voluptatibus itaque quidem, similique nesciunt vitae! Nesciunt quas aperiam, voluptate beatae, alias minima dignissimos sequi quo aliquid corporis iusto.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer></footer>
+
+    <script src="monster-card/var.js"></script>
+    <script src="monster-card/functions.js"></script>
+</body>
+</html>

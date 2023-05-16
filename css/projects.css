@@ -1,7 +1,7 @@
 .projects{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    padding: 1rem 0rem;
 }
 
 .projects .space{
@@ -14,15 +14,22 @@
 }
 
 .projects .wrap{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
 }
 
-.projects .button{
-    width: 40%;
-    display: flex;
-    justify-content: center;
+.mockup img{
+    max-width: 326px;
+}
+
+
+@media (min-width: 370px) and (max-width: 1020px) {
+    
+    .projects .wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }

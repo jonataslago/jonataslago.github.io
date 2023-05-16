@@ -1,0 +1,79 @@
+/* ===== NAVIGATION ======== 
+    
+    > SETTINGS
+    > BOX
+
+*/
+
+
+
+/* ==== SETTINGS ==== */
+
+main{
+    margin-bottom: 1rem;
+}
+
+.camp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.camp .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    row-gap: 3rem;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.right, .left{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ==== BOX ====*/
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.box input{
+    background: none;
+    width: 95%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color-dark-theme);
+    font-family: var(--font-serif);
+    font-weight: var(--light);
+}
+
+.category{
+    position: absolute;
+    background-color: var(--bg-monster);
+    padding: 0px 5px;
+    top: -13px;
+    left: 10px;
+}
+
+.-half{
+    width: 45%;
+}

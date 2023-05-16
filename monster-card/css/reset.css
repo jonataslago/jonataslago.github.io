@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --font: 'Roboto', sans-serif;
+    --font-serif: 'Roboto Slab', serif;
+    --font-size-card-default: 12px;
+    --font-size-card-nome: 16px;
+    --font-size-title: 48px;
+
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+
+    --bg: #F6FAFB;
+    --bg-monster: #18181b;
+    --bg-card: #1c1917;
+
+    --main-color: #fff;
+    --fancy-color: #E9DAC4;
+    
+    --text-color: #000;
+    --text-color-dark-theme: #fff;
+}
+
+body, h1, h2, h3, p, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--text-color-dark-theme);
+    font-family: var(--font-serif);
+}
+
+body{
+    background-color: var(--bg-monster);
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section .wrap{
+    margin-top: 4rem;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.action{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: var(--font-size-title);
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+}

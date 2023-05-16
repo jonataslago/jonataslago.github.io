@@ -1,0 +1,116 @@
+/* NAVIGATION
+    > SETTINGS
+    > TEXT
+    > ATRIBUTE
+*/
+
+
+
+
+
+/* === SETTINGS === */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    border: solid 1px #fff;
+    width: 370px;
+    padding: 10px;
+    font-family: var(--font);
+    gap: 10px;
+}
+
+.upper-half{
+    display: flex;
+    gap: 10px;
+}
+
+.middle, .end{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-setting{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 112px;
+    min-width: 112px;
+    min-height: 112px;
+    overflow: hidden;
+    border: solid 1px #fff;
+}
+
+.img-setting img{
+    max-width: 112px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* =============== << TEXT >> ================== */
+
+
+.nome{
+    font-weight: var(--bold);
+    font-size: var(--font-size-card-nome);
+}
+
+.sub{
+    font-size: var(--font-size-card-default);
+    font-weight: var(--medium);
+}
+
+.data{
+    font-size: var(--font-size-card-default);
+    font-weight: var(--light);
+}
+
+.classe{
+    position: absolute;
+    bottom: -5px;
+    right: 2px;
+    font-size: 34px;
+    font-weight: var(--bold);
+    text-shadow: 0px 0px 3px #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============== << ATRIBUTE >> =================== */
+
+.stats .box{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    font-weight: var(--regular);
+    font-size: 12px;
+    border-radius: 0;
+}
+
+.stats .category{
+    font-size: 10px;
+    padding: 0px 2px;
+    left: 3px;
+    top: -8px;
+}
