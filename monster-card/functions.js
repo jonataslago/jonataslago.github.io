@@ -26,6 +26,14 @@ function editar(){
 
 }
 
+btnCriar.addEventListener("click", function() {
+
+  if (img.value === "") {
+    alert("Coloque uma imagem antes de prosseguir!");
+  }
+
+});
+
 
 
 

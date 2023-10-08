@@ -137,6 +137,14 @@ function criar(){
 
 }
 
+btnCriar.addEventListener("click", function() {
+
+  if (img.value === "") {
+    alert("Coloque uma imagem antes de prosseguir!");
+  }
+
+});
+
 function exportar() {
 
   const canva = carlos.querySelector('canvas');
