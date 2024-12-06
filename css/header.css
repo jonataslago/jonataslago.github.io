@@ -1,0 +1,33 @@
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.header div {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header nav{
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+}
+
+.menu{
+    transition: 200ms;
+}
+
+.menu:hover{
+    transform: scale(1.15);
+}
+
+@media (width <= 500px){
+    header nav{
+        display: none;
+    }
+}

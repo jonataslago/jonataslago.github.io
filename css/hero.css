@@ -1,0 +1,47 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: var(--second-color);
+    height: 100vh;
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.green{
+    color: var(--third-color);
+}
+
+.intro{
+    font-size: 20px;
+}
+
+.ocupation{
+    font-size: 60px;
+}
+
+.btn{
+    margin-top: 30px;
+}
+
+/* ======= RESPONSIVE ======== */
+
+@media (width <= 570px){
+    .intro{
+        font-size: var(--default-font-size);
+    }
+    
+    .ocupation{
+        font-size: var(--40px);
+    }
+}
+
+
+/* ESTUDAR https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule */

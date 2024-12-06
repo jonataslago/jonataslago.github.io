@@ -1,0 +1,37 @@
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.division{
+    gap: 15px;
+}
+
+
+
+
+
+.skills .wrap{
+    align-items: center;
+    gap: 5px;
+}
+
+.skills .sl{
+    gap: 10px;
+}
+
+.skills .icon{
+    font-size: var(--25px);
+    width: var(--25px);
+}
+
+/* ========= RESPONSIVE ========== */
+
+@media (width <= 1280px) {
+    .skills{
+        grid-template-columns: auto;
+
+        gap: 50px;
+    }
+}
