@@ -7,7 +7,7 @@
     text-transform: uppercase;
 }
 
-.header div {
+.header .border {
     justify-content: space-between;
     padding: 30px 0;
 }
